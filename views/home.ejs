@@ -1,0 +1,18 @@
+Welcome to my blog
+<% for (let i = 0; i < blog.length; i++) { %>
+  <h1><%= blog[i]; %><% i++; %></h1>
+  <p><%=blog[i]; %></p><%
+} %>
+
+<a href="#"><p onclick="myFunction()">click here to add another post</p></a>
+<form class="" action="/" method="post" style="display:none" id="blogForm">
+<input type="text" name="title" value="" placeholder="enter title">
+<input type="textbox" name="body" value="" placeholder="write your post">
+<input type="submit" name="" value="Post a blog">
+</form>
+
+<script>
+function myFunction() {
+  document.getElementById("blogForm").style = "display:block";
+}
+</script>
